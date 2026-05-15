@@ -10,6 +10,7 @@ import pandas as pd
 from fastapi import FastAPI, File, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
+from shapely.geometry import Point
 
 app = FastAPI(title="AquaCascade AI API", version="0.1.0")
 
